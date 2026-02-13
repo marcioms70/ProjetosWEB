@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datajud na prática</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Consulta Datajud (didática)</h1>
+      <p>
+        Preencha o índice do tribunal e o JSON da consulta. Depois clique em
+        <strong>Consultar</strong>.
+      </p>
+
+      <form id="form-consulta">
+        <label for="tribunal">Índice/tribunal</label>
+        <input
+          id="tribunal"
+          name="tribunal"
+          type="text"
+          value="api_publica_tjsp"
+          required
+        />
+
+        <label for="query">Query JSON</label>
+        <textarea id="query" name="query" rows="12">
+{
+  "size": 3,
+  "query": {
+    "match_all": {}
+  }
+}
+        </textarea>
+
+        <button type="submit">Consultar</button>
+      </form>
+
+      <section>
+        <h2>Resposta</h2>
+        <pre id="resultado">Aguardando consulta...</pre>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+:root {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  color: #102a43;
+  background: #f0f4f8;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(16, 42, 67, 0.12);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  padding: 10px;
+  border: 1px solid #bcccdc;
+  border-radius: 8px;
+}
+
+button {
+  background: #0b69a3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #035388;
+}
+
+pre {
+  background: #102a43;
+  color: #d9e2ec;
+  padding: 16px;
+  border-radius: 8px;
+  overflow: auto;
+}
