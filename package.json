@@ -1,0 +1,12 @@
+{
+  "name": "datajud-app-didatica",
+  "version": "1.0.0",
+  "description": "Aplicação didática para consumir a API Datajud",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["datajud", "cnj", "api"],
+  "license": "MIT"
+}
